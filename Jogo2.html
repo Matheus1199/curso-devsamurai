@@ -1,0 +1,71 @@
+  <html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Jokenpô - Pedra, Papel e Tesoura</title>
+
+    <style>
+      #principal {
+        border: lpx solid red;
+      }
+
+      #placar {
+        border: lpx solid blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #jogador {
+        background-color: red;
+        flex-grow: 1;
+
+
+      }
+
+      #versus {
+        background-color: blue;
+
+      }
+
+      #computador {
+        background-color: green;
+        flex-grow: 1;
+
+      }
+
+      #mensagem {
+        border: lpx solid green;
+        clear: both;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="principal">
+      <h1 id="titulo">Pedra, Papel e Tesoura</h1>
+
+      <div id="placar">
+       <div id="jogador">
+         <h2 id="jogador-nome">Matheus</h2>
+         <span id="jogador-pontos">0</span>
+         <ul id="jogador-escolha">
+          <li><a id="jogador-escolha-1"><img src="img/pedra.png"</a></li>
+        </ul>
+       </div>
+
+       <div id="versus">
+         vs
+       </div>
+
+       <div id="computador">
+         computador
+       </div>
+      </div>
+
+      <div id="mensagem">mensagens</div>
+
+      </div>
+    </div>
+  </body>
+  </html>

@@ -1,0 +1,61 @@
+<html>
+  <body>
+    <canvas id="folha" width="600" height="500"></canvas>
+
+    <script>
+      window.onload = function() {
+        setInterval(executar, 1000 / 30);
+      }
+
+      var posicaoBolaX = posicaoBolaY = 10;
+      var velocidadeBolaPosicaoX = velocidadeBolaPosicaoY = 5;
+
+    function executar() {
+      var folhaDesenho = document.getElementById('folha');
+      var areaDesenho = folhaDesenho.getContext("2d");
+
+      var larguraCampo = 600;
+      var alturaCampo = 500;
+      var esperruraRede = 5;
+
+
+      var diametroBola = 5;
+      var tamanhoRaquete = 50;
+
+      areaDesenho.fillStyle = "#286047"; // cor verde
+
+      areaDesenho.fillRect(0, 0, larguraCampo, alturaCampo);
+
+      areaDesenho.fillStyle = "#FFFFFF"; // cor branca
+
+      // Meio do campo
+      areaDesenho.fillRect(larguraCampo / 2 - esperruraRede / 2, 0, esperruraRede, alturaCampo);
+
+      // Raquete 1
+      areaDesenho.fillRect(0, 30, esperruraRede, tamanhoRaquete);
+
+      //Raquete 2
+      areaDesenho.fillRect(595, 30, esperruraRede, tamanhoRaquete);
+
+
+      // BoLa
+      areaDesenho.fillRect(posicaoBolaX, posicaoBolaY, diametroBola, diametroBola);
+
+      posicaoBolaX = posicaoBolaX + velocidadeBolaPosicaoX;
+      posicaoBolaY = posicaoBolaY + velocidadeBolaPosicaoY;
+
+      // verifica lateral superior
+      if(posicaoBolaY < 0 && velocidadeBolaPosicaoY < 0) {
+        velocidadeBolaPosicaoY = -velocidadeBolaPosicaoY;
+      }
+
+      // Verifica lateral inferior
+      if(posicaoBolaY > alturaCampo && velocidadeBolaPosicaoY > 0) {
+        velocidadeBolaPosicaoY = -velocidadeBolaPosicaoY;
+      }
+
+
+    }
+   </script>
+  </body>
+</html>

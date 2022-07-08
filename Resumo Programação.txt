@@ -1,0 +1,530 @@
+3 passos ate o codigo:
+
+     	Problema - Algoritmo - Programa
+                  * narrativa    * C
+                  * Fluxograma   * Pascal
+                  * Pseudocódigo * Python
+                                 * Java
+
+Exercicio pratico: Fazer um robô que consiga trocar a lâmpada (Matheus)
+
+Passo 1: O robô sai de seu lugar original e anda até a escada que está no meio da sala
+
+Passo 2: O robô sobe na escada se segurando na lateral da mesma e dando um passo de cada vez
+
+Passo 3: O robô ja seguro e equilibrado ergue a mãos e desrosqueia a lâmpada 
+
+Passo 4: O robô desce da escada segurando a lâmpada e depois deixando ela em cima da mesa
+
+Passo 5: O robô pega a outra lâmpada e volta de frente pra escada 
+
+Passo 6: O robô sobe a escada se apoiando com a mão que ele não está segurando a lâmpada 
+
+Passo 7: Quando o robô chegar ao topo da escada ele ergue a mão na qual está com a lâmpada e rosquiea no devido lugar
+
+Passo 8: O robô desce a escada e testa a lâmpada acionando o interruptor 
+
+Passo 9: O robô volta a seu lugar original
+
+Trocar a Lâmpada: 
+
+Passo 1: Localizar a escada
+Passo 2: Ela está posicionada debaixo da lâmpada?
+   Se sim: Caucular quantos degraus
+   Se não: Apresentar um erro ao operador do robô
+Passo 3: Iniciar subida
+Passo 4: Já chegou no final da escada?
+   Se sim: Para de subir
+   Se não: Continuar subindo
+Passo 5: Localizar a lâmpada 
+Passo 6: Lâmpada queimada?
+   Se sim: Iniciar a rotina de retirar a lâmpada queimada 
+   Se não: Comunicar e iniciar  a rotina de descer da escada
+Passo 7: Lâmpada queimada retirada?
+   Se sim: Iniciar a instalação da nova
+   Se não: Continuar a desrosquear a lâmpada queimada
+Passo 8: Rosquear a lâmpada nova 
+Passo 9: Descer da escada 
+
+No JavaScript temos duas formas basícas de interagir com as pessoas:
+
+Alerta - Apenas informa a pessoa algo. Normalmente uma irformação importante que a pessoa deveria saber.
+Confirmação - irforma algo e solicita uma ação. Normalmente "Ok" (positivo) e "Cancelar" (negativo)
+
+Para fazer um alert ou confirm tem que seguir esses padrões:
+
+Google - alert("Ola eu sou o google"); - confirm("Ola voce gostaria de me conhecer melhor");
+
+Atom, NUNCA SE ESQUCER DE SALVAR AS ALTERAÇÕES
+
+Alert e confirm no Atom:
+
+1 <script>
+2 alert("Ola eu sou o google"); - confirm("Ola voce gostaria de me conhecer melhor");
+3 </script>
+
+Alert e confirm no console do desenvolvedor pelo Atom:
+
+1 <script>
+2 console.log("Esta mensagem nao aparece na tela do usuario");
+3 </script>
+
+HTML:
+Então o HTML é uma linguagem que usamos para criar textos, formatações, imagens, hyperlinks, etc...
+Com esta linguagem de MARCAÇÃO (uma linguegem não executavel) é possivel criar o "rosto" de um programa. Ou seja, a parte que as pessaos que utilizam veem no computador, smartphones e tables.
+
+Uma marcação do HTML é normalmente chamado de TAG ou ELEMENTO.
+As Tags são comandos utilizados pelo navegador para todas as formatações indicadas. E assim como em outras linguagens existem regras:
+     
+REGRAS TAGS:
+
+A tag que precedida pela barra(/) significa instrução
+
+Exemplos: b = negrito, p = paragrafo, br = quebra de linha, i = Estilo itálico, u = sublinhado, s = Estilo riscado no meio, strong = similar ao negrito, sup = sobrescrito, sub = subscrito, h = cabeçalho, 
+                                                                                                                                                                                             h2, h3, h4, h5, h6    
+Regra 1 - As tags aparecem entre os sinais de MENOR(<) e MAIOR(>).
+               Por Exemplo: <b>, <a>, <p> 
+
+Regra 2 - As tags são utilizadas em PARES, sendo que a tag de fechamento é precedida de uma barra(/)
+               Por Exemplo: <b>seu texto</b>, <a>seu texto</a> 
+
+Regra 3 - Quando uma Tag é utilizada SOZINHA, deve ser fechada na mesma tag de abertura.
+               Por Exemplo: <br />
+
+ESTRUTURA BASICA DO HTML:
+
+<html> - Página HTML
+  <head> - cabeçalho da página 
+    <title>Título da sua página</title>
+  </head> 
+  <body> - Conteudo da pagina
+    <p>Minha primeira pagina.</p>
+  </body>
+</html>
+
+
+COMO COLORIR SEU HTML:
+
+O HTML possui um esquema de motagem de cores através do RGB
+
+R de RED
+G de GREEN
+B de BLUE
+
+Que são compostas em um código hexadecimal (0 a 255)
+
+0 em hexadecimal = 0
+255 em hexadecimal = FF 
+#FFFFF
+
+Azul = #0000FF
+Vermelho = #FF0000
+Verde = #00FF00
+
+
+Atributos:
+
+Align - Alinhar os cabeçalhos e os paragrafos
+
+Exemplos: <h1 align="center">Matheus Boanfin</h1>, <p align="center">Matheus Boanfin</p>
+
+Soluçao de erros: 
+
+1º: Verificar as mensagens do console de desenvolvedor do seu navegador
+2º: Verificar erros de ortografia e pontuação
+3º: Usar o Google, copiar o codigo do console e colar na aba de pesquisa do google
+
+
+ISSO TUDO EM JAVASCRIPT
+
+
+VARIAVEIS:
+
+As variaveis nos permitem fazer com que o computador armazene dados para calculos
+Por exemplo: 2021 - 2005 = 16 anos
+Nesse exemplo as variaveis podem ser: 2021 ano atual, 2005 ano de nascimento
+
+Regras para usa variável:
+
+Regra 1: Para declarar uma variável use o comando var: var nome;
+
+Regra 2: A variável deve ser decladrada sempre antes do seu uso: var nascimento;
+                                                                 var idade;
+                                                                 idade = 2016 - nascimento;
+
+Regra 3: O nome deve começar com uma letra, underline(_), ou cifrão ($); os subsequentes podem também ser números (0-9).
+var _teste;
+var $outro;
+var numero2;
+
+Regra 4: Os nomes são sensíceis a letras maiúsculas e ninúsculas (case sensitive).
+Exemplo: var anoatual; varanoAtual;
+
+Regra 5: Para querer espaçar as palavras use undeline (_) ou a letra de segunda palavra em maiúsculo(LEMBRANDO QUE SE VOCE ESTIVER ESCRITO ESSA PALAVRA MAIS DE UMA VEZ CORRIGIR ELA EM TODAS AS VEZES)
+
+
+Como fazer variaveis:
+
+1º:
+<script>
+alert(2021 - 2005);
+</script>
+
+2º:
+<script>
+var idade = 2021 - 2005;
+
+alert(idade);
+</script>
+
+<script>
+var anocorrente = 2021;
+var nascimento = 2005;
+var idade = anocorrente - nascimento;
+
+alert(idade);
+</script>
+
+Dicas úteis:
+
+Dica 1: Não seja criativo com nomes de variáveis, vá direto ao ponto!
+
+Dica 2: Não simplifique demais!
+
+Dica 3: Fale a mesma lingua dos programadores, no caso do JavaScript, o padrão de nomes de varáveis é o camelCase. A segunda palavra é sempre escrita em CAIXA ALTA.  
+Exemplo: var anoAtual;
+         var idade;
+         var dataNascimento;
+
+Dica 4: Facilite a vida do próximo que irá ler esse código. Inclusive pode ser você mesmo dqui a 1 ano.
+
+
+Tipos de dados de variáveis:
+
+Numéricos e suas subdivisões, Inteiros e Decimais.
+
+Caracteres = Textos
+
+Boobleanos = Verdaeiro (true) ou Falso (false)
+
+Os Inteiros so podem armazenar valores de numeros como: 1,2,3,4, ..., 10, -6, -99 etc
+Os Decimais so podem armazenar valores de numeros como: 1,5; 2,5; -2,5; -1,5
+
+Variaveis inteiras = var valor1; ou var valor1 = 10;
+                     valor1 = 10; 
+
+Variaveis decimais = var valor2;  ou var valor2 = 1.5;
+                     valor2 = 1.5;
+
+Variaveis caracteres = var nome = "Matheus";
+
+Variaveis Boobleanos var verdadeiro = true; var falso = false;
+
+<script>
+var inteiro = 10;
+var decimal = 1.5;
+var nome = "Matheus";
+var verdadeiro = true;
+var falso = false;
+
+var soma = inteiro + decimal;
+
+alert(soma);
+alert(inteiro);
+alert(decimal);
+alert(nome);
+alert(verdadeiro);
+alert(falso);
+</script>
+
+Como na matematica a programação possui tbm operações basicas como:
+
+Soma (+)
+Subtração (-)
+Multiplicação (*) (EM JAVA SCRIPT É ESCRITO MULT)
+Divisão (/) (EM JAVASCRIPT É ESCRITO DIV)
+
+Para usa por exemplo raiz quadrada, o JavaScript desponibiliza o Math.sqrt(16);
+
+<script>
+var soma = 10 + 15;
+var mult = 10;
+
+var resultado = soma * mult;
+
+alert(resultado);
+</script>
+
+
+Prioridades na matematica:
+
+Parênteses ()
+
+Raiz quadrada e Potencia Math.sqrt Math.pow
+
+Multiplicação e Divisão * /
+
+Soma e subtração + - 
+
+
+Para calcular, por exemplo, uma média é utilizado esse código:
+
+<script>
+ var media = (3 + 3 + 3) / 3;
+
+ alert(media);
+</script>
+
+Caracteres:
+
+<script>
+var soma = "2" + "3";
+
+alert(soma);
+</script>
+
+Quando decidimos colocar "aspas" nos numeros o computador entende que queremos agrupar
+
+No caso do exemplo acima o alerta da o resultado de 23
+
+TUDO QUE É COLOCADO ENTRE ASPAS O COMPUTADOR ENTENDE COMO TEXTO 
+
+Funções da biblioteca Math do JavaScript:
+
+Math.abs(x)
+Retorna o módulo, ou valor absoluto, de um número (|x|).
+Math.acos(x)
+Retorna o arco-coseno de um número (\arccos{x}).
+Math.acosh(x) 
+Retorna o arco-coseno hiperbólico de um número.
+Math.asin(x)
+Retorna o arco-seno de um número (\arcsin{x}).
+Math.asinh(x) 
+Retorna o arco-seno hiperbólico de um número.
+Math.atan(x)
+Retorna o arco-tangente de um número (\arctan{x}).
+Math.atanh(x) 
+Retorna o arco-tangente hiperbólico de um número (\arctan{x}).
+Math.atan2(x, y)
+Retorna o arco-tangente do quociente de seus argumentos.
+Math.cbrt(x) 
+Retorna a raiz cúbica de um número (\root{3}{x}).
+Math.ceil(x)
+Retorna o menor inteiro que é maior ou igual a um número.
+Math.cos(x)
+Retorna o coseno de um número (\cos{x}).
+Math.cosh(x) 
+Retorna o coseno hiperbólico de um número .
+Math.exp(x)
+Retorna e^x, onde x é o argumento, e e é a constante de Euler (2.718...), a base do logaritmo natural.
+Math.expm1(x) 
+Retorna e^x-1.
+Math.floor(x)
+Retorna o maior inteiro que é menor ou igual a um número.
+Math.fround(x) (en-US) 
+Retorna a mais próxima representação de ponto flutuante de precisão-única de um número.
+Math.hypot([x[,y[,…]]]) 
+Retorna a raiz quadrada da soma dos quadrados dos argumentos (\sqrt{x^2 + y^2 + \dots}).
+Math.imul(x) (en-US) 
+Retorna o resultado de uma multiplicação de inteiro de 32-bit.
+Math.log(x)
+Retorna o logaritmo natural (\log_ex ou \ln{x}) de um número.
+Math.log1p(x) 
+Retorna o logaritmo natural de 1 + x (\log_e(1+x) ou \ln(1+x)) de um número.
+Math.log10(x) 
+Retorna o logaritmo de x na base 10 (\log_{10}x).
+Math.log2(x) 
+Retorna o logaritmo de x na base 2 (\log_2 x).
+Math.max([x[,y[,…]]])
+Retorna o maior dentre os parâmetros recebidos.
+Math.min([x[,y[,…]]])
+Retorna o menor dentre os parâmetros recebidos.
+Math.pow(x,y)
+Retorna a base x elevada à potência y do expoente, ou seja, x^y.
+Math.random()
+Retorna um número pseudo-aleatório entre 0 e 1.
+Math.round(x)
+Retorna o valor arrendodado de x, para o valor inteiro mais próximo.
+Math.sign(x) 
+Retorna o sinal de x, indicando se é positivo, negativo ou zero.
+Math.sin(x)
+Retorna o seno de um número (\sin x).
+Math.sinh(x) 
+Retorna o seno hiperbólico de um número (\sinh x).
+Math.sqrt(x)
+Retorna a raiz quadrada positiva de um número (\sqrt x).
+Math.tan(x)
+Retorna a tangente de um número (\tan x).
+Math.tanh(x) 
+Retorna a tangente hiperbólica de um número (\tanh x).
+Math.toSource() 
+Retorna a string "Math".
+Math.trunc(x) 
+Retorna a parte inteira de x, removendo quaisquer dígitos fracionários.
+
+Constantes de biblioteca Math do JavaScript:
+
+Math.E
+Constante de Euler e base dos logaritmos naturais, aproximadamente 2.718.
+Math.LN2
+Logaritmo natural de 2, aproximadamente 0.693.
+Math.LN10
+Logaritmo natural de 10, aproximadamente 2.303.
+Math.LOG2E
+Logaritmo de E na base 2, aproximadamente 1.443.
+Math.LOG10E
+Logaritmo de E na base 10, aproximadamente 0.434.
+Math.PI
+Relação entre a circunferência de um círculo e o seu diâmetro, aproximadamente 3.14159.
+Math.SQRT1_2
+Raiz quadrada de 1/2; Equivale a 1 dividido pela raiz quadrada de 2, aproximadamente 0.707.
+Math.SQRT2
+Raiz quadrada de 2, aproximadamente 1.414.
+
+
+Criação do jogo: 
+
+Primeiramente ele de ve começar com <html> e <body> e dps adicionado o <canvas>
+o canvas deve ser escrito assim <canvas id="folha" width(que significa largura)"600" height="500"(significa altura)></canvas>.
+Para definir uma cor de trabalho: areaDesenho.fillStyle= '#286047';
+
+Quadrado: Primeiro definimos a altura depois a largura e os pontos de inicio Horizontal (X) e ponto de inicio vertical (Y)
+Comando: areaDesenho.fillRect(X, Y, Largura, Altura);
+
+Criar as variaveis:
+var folhaDesenho = document.getElementByid("folha");
+var areaDesenho = folhaDesenho.getContext("2d");
+
+Pontos inicias igual à 0
+
+Para calcular a linha do centro:
+X = Metade do campo - Metade da linha
+No caso: X = 300 - 2.5(largura da linha de 5) = 297.5
+Y = 0
+
+Meio do Campo:
+areaDesenho.fillStyle = '#ffffff';
+areaDesenho.fillRect(297.5, 0, 5, 500);
+
+Raquete 1:
+areaDesenho.fillRect(0(valor do X), 30(esse numero pode ser qualque um, lembrando que ele equivale ao valor do Y), 5(valor da largura), 50(valor da altura)
+
+Raquete 2: 
+areaDesenho.fillRect(595,(porque largura - espessura) 30, 5, 50 );
+
+Texto: areaDesenho.fillText('Meu lindo texto na tela', X, Y);
+
+Tipos de condiçao basicas para repetiçao:
+
+1. Maior e menor: > e < 
+2. Maior Igual e Menor Igual: >= e <=
+3. Igual: =
+4. Diferente: /=
+
+Decisão do computador:
+
+se a condicação for verdadeira faça algo
+
+if(condição verdadeira) {
+  // algo
+}
+
+Operadores de comparação e lógicos:
+
+Os varios tipos de condiçao pro se:
+
+Condicaoes de comparaçao:
+
+1. Maior ou Menor < >
+2. Maior Igual ou Menor Igual >= e <=
+3. Igual == 
+4. Diferente !=
+
+Condiçao logicas:
+
+1. Não: !!
+2. E e Ou: && e ||
+
+E: &&
+
+0 && 0 = 1
+0 && 1 = 0
+1 && 0 = 0
+1 && 1 = 1
+
+Quando as condições são iguais elas se tornam verdadeiras (1) e quando são diferentes se tornam falsas (0)
+
+OU: ||
+
+0 || 0 = 0
+0 || 1 = 1
+1 || 0 = 1
+0 || 1 = 1
+1 || 1 = 1
+
+Quando as condições tiverem uma verdadeira elas automaticamente se tornam verdadeira (1) só se tornam falsas quando todas são falsas (0)
+
+Prioridades de operadores logicos:
+
+Parenteses ()
+
+E &&
+
+OU ||
+
+
+if(x < 0 || x > 10) && (y >= 30) {
+  // algum comando
+}
+
+supondo que x = 20 e y = 14
+
+primeiro resolva os parenteses 
+
+x é menor que 0? Falso
+
+x é maior que 10? Verdadeiro 
+
+Falso OU Verdadeiro? Verdadeiro
+
+Outro parenteses:
+
+y Maior ou igual a 30? Falso
+
+Verdadeiro E Falso? Falso 
+
+Então a condição do if é Falsa
+
+Senão:
+
+Usado para ser ao contrario do se, por exemplo:
+
+se está conectado na internet, faça:
+   leia no computador
+
+senão 
+leia o jornal
+
+REGRAS PRINCIPAIS DO JOGO:
+
+1. Ao bater nas laterais do campo a bola deverá ser rebatida no sentido oposto.
+
+2. Ao bater na rauqete a bola deverá ser rebatida no sentido oposto
+
+3. Ao cruzar a linha do adversário (sem rebater na raquete) deverá se somar 1 ponto e iniciar a bola no meio do campo
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
